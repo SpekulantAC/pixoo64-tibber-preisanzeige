@@ -80,10 +80,10 @@ def pixoo_text():
     if total_price < 0.3:
         pix.draw_image('images/ampel_gruen.png')
     # Ist der total_price größer als 0,3 und kleiner als 0,4 dann zeige gelbe Ampel
-    elif total_price > 0.3 and total_price < 0.4:
+    elif total_price >= 0.3 and total_price < 0.4:
         pix.draw_image('images/ampel_gelb.png')
     # Ist der total_price größer als 0,4 dann zeige rote Ampel
-    elif total_price > 0.4:
+    elif total_price >= 0.4:
         pix.draw_image('images/ampel_rot.png')
     
     # Schreibe die Texte auf dem Display
